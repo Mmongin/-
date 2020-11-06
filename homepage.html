@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNK-网络原理学习网</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/homepage.css">
+    <!-- <link rel="stylesheet" href="./icnofont"> -->
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2181379_6zuz6xebr9b.css">
+    <link rel="icon" href="./icnofont/favicon.ico">
+    <script src="./js/homepage.js"></script>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <div class="daohang">
+        <div class="logo">
+            <image class="logopng" src="./image/logo2.png" 
+            mode="aspectFit|aspectFill|widthFix" 
+            lazy-load="false" binderror="" bindload="" />
+        </div>
+        <div class="wuge">
+            <div class="txt"><a href="wuli.html" target="_blank">物理层</a></div>
+            <div class="txt"><a href="lianlu.html" target="_blank">链路层</a></div>
+            <div class="txt"><a href="wangluo.html" target="_blank">网络层</a></div>
+            <div class="txt"><a href="yunshu.html" target="_blank">运输层</a></div>
+            <div class="txt"><a href="yingyong.html" target="_blank">应用层</a></div>
+            <div class="help"><a href="" target="_blank">帮助</a></div>
+        </div>
+    </div>
+    <!-- 首屏栏 -->
+    <div class="first">   
+        <div class="banner">
+            <div class="text">
+                <text class="chinese" selectable="false" space="false" decode="false">
+                    计算机网络原理
+                </text>
+                <text class="english" selectable="false" space="false" decode="false">
+                    Computer Network
+                </text>
+                <text class="jieshao" selectable="false" space="false" decode="false">
+                    就像不同城市的人旅行相会。电脑主机系统就像一个小城，里面的数据就像人，
+                    <br>网络链路就像旅途道路，不知道路需要有路由器作为路标。
+                </text>       
+            </div>
+            <div class="icno">
+                <a href="javascript:;"><i class="iconfont icon-weixin1"></i></a>
+                <a href="javascript:;"><i class="iconfont icon-weibo1"></i></a>
+                <a href="javascript:;"><i class="iconfont icon-GitHub"></i></a>
+            </div>
+        </div>
+        
+    </div>
+    <!-- 物理层 -->
+    <div class="wuli">
+            <div class="wuliimg">
+                <img src="./image/图片3.png" alt="">
+            </div>
+            <div class="wulitxt">
+                <a href="javascript:;">
+                    <text class="chinese" selectable="false" space="false" decode="false">
+                        物理层
+                    </text>
+                </a>
+                <a href="javascript:;">
+                    <text class="english" selectable="false" space="false" decode="false">
+                        Physical Layer
+                    </text>
+                </a>
+                <text class="jieshao" selectable="false" space="false" decode="false">
+                    实现相邻计算机节点之间比特流的透明传送，尽可能屏蔽掉具体传输介质和物理设备的差异。
+                    <br>使其上面的数据链路层不必考虑网络的具体传输介质是什么
+                </text>       
+            </div>
+    </div>
+    <!-- 数据链路层 -->
+    <div class="lianlu">
+        <div class="lianlutxt">
+            <a href="javascript:;">
+                <text class="chinese" selectable="false" space="false" decode="false">
+                    数据链路层
+                </text>
+            </a>
+            <a href="javascript:;">
+                <text class="english" selectable="false" space="false" decode="false">
+                    Data Link Layer
+                </text>
+            </a>
+            <text class="jieshao" selectable="false" space="false" decode="false">
+                两台主机之间的数据传输，总是在一段一段的链路上传送的，这就需要使用专门的链路层的协议。
+                <br>数据链路层将网络层交下来的 IP 数据报组装程帧，
+                <br>在两个相邻节点间的链路上传送帧。每一帧包括数据和必要的控制信息。
+            </text>       
+        </div>
+        <div class="lianluimg">
+            <img src="./image/图片7.png" alt="">
+        </div>
+    </div>
+    <!-- 网络层 -->
+    <div class="wangluo">
+        <div class="wangluoimg">
+            <img src="./image/图片6.png" alt="">
+        </div>
+        <div class="wangluotxt">
+            <a href="javascript:;">
+                <text class="chinese" selectable="false" space="false" decode="false">
+                    网络层
+                </text>
+            </a>
+            <a href="javascript:;">
+                <text class="english" selectable="false" space="false" decode="false">
+                    Network Layer
+                </text>
+            </a>
+            <text class="jieshao" selectable="false" space="false" decode="false">
+                计算机网络中进行通信的两个计算机之间可能会经过很多个数据链路，也可能还要经过很多通信子网。
+                <br>网络层的任务就是选择合适的网间路由和交换结点， 确保数据及时传送。
+            </text>       
+        </div>
+    </div>
+    <!-- 运输层 -->
+    <div class="yunshu">
+        <div class="yunshutxt">
+            <a href="javascript:;">
+                <text class="chinese" selectable="false" space="false" decode="false">
+                    运输层
+                </text>
+            </a>
+            <a href="javascript:;">
+                <text class="english" selectable="false" space="false" decode="false">
+                    Transport Layer
+                </text>
+            </a>
+            <text class="jieshao" selectable="false" space="false" decode="false">
+                负责向两台主机进程之间的通信提供通用的数据传输服务。
+                <br>由于一台主机可同时运行多个线程，因此运输层有复用和分用的功能。
+                <br>所谓复用就是指多个应用层进程可同时使用下面运输层的服务，分用和复用相反，
+                <br>是运输层把收到的信息分别交付上面应用层中的相应进程。
+            </text>       
+        </div>
+        <div class="yunshuimg">
+            <img src="./image/图片1.png" alt="">
+        </div>
+    </div>
+    <!-- 应用层 -->
+    <div class="yingyong">
+        <div class="yingyongimg">
+            <img src="./image/图片5.png" alt="">
+        </div>
+        <div class="yingyongtxt">
+            <a href="javascript:;">
+                <text class="chinese" selectable="false" space="false" decode="false">
+                应用层
+                </text>
+            </a>
+            <a href="javascript:;">
+                <text class="english" selectable="false" space="false" decode="false">
+                    Application Layer
+                </text>
+            </a>
+            <text class="jieshao" selectable="false" space="false" decode="false">
+                通过应用进程间的交互来完成特定网络应用。
+                <br>应用层协议定义的是应用进程（进程：主机中正在运行的程序）间的通信和交互的规则。
+                <br>对于不同的网络应用需要不同的应用层协议。
+            </text>       
+        </div>
+    </div>
+
+    <!-- 设置底部栏 -->
+    <div class="bottom">
+        <div class="img">
+            <img src="./image/logo3.png" alt="">
+        </div>
+        <div class="txt1">联系我们</div>
+        <div class="txt2">计算机网络原理</div>
+        <!-- <div class="txt3">© Copyright 2020. 计算机网络原理版权所有</div> -->
+    </div>
+
+</body>
+</html>
